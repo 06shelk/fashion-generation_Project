@@ -1,0 +1,119 @@
+/* 세대 선택 메뉴 */
+.menu {
+    display: flex;
+    align-items: center; /* 버튼들을 세로로 가운데 정렬 */
+    padding-top: 44px; /* 헤더만큼을 뺀 위치 */
+    width: 100%;
+    height: 120px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+    margin: 0 auto; /* 버튼들을 가로로 가운데 정렬 */
+    width: calc(100% - 100px * 2); 
+    max-width: 600px;
+    justify-content: space-between;
+}
+
+.menu-item {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--third-color);
+    border-radius: 5px;
+}
+
+.nav-toggle {
+    font-size: var(--h2-font-size);
+    visibility: hidden;
+    right: 16px;
+   
+}
+
+.nav_toggle {
+    display: none;
+    
+}
+
+/*coco chanel 부분*/
+.COCO {
+    background-color: var(--first-color);
+}
+
+.COCO-image {
+    height: 30vh;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/* 당신의... 어떠셨나요? 부분 */
+.about {
+    margin-top: 30px;
+    border: 1px solid #000000;
+    position: relative;
+    
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 부모 요소에 꽉 차게 맞춤 */
+    vertical-align: middle;
+}
+.about-text {
+    padding: 5px 10px;
+    color: var(--body-color);
+    font-size: var(--h1-font-size);
+    text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate( -50%, -50% );
+}
+
+/* tablet */
+@media screen and (max-width: 720px) {
+    .COCO-image {
+        height: 100%;
+    }
+
+    .about img {
+        height: 70vh;
+    }
+
+}
+
+/* mobile */
+@media screen and (max-width: 540px) {
+    .menu {
+        display: none;
+    }
+
+
+    .COCO {
+        margin-top: 44px;
+        height: 50vh;
+    }
+
+    .COCO img {
+        height: 30vh;
+        padding-top: 80px;
+
+    }
+
+    .about-text {
+        font-size: var(--h2-font-size);
+    }  
+
+    .about img {
+        height: 70vh;
+    }
+
+    .nav_toggle {
+        display: block;
+    }
+}

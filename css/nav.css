@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;400;700&display=swap');
+/* Variables CSS */
+:root {
+    --first-color: #000000; /* 검은색 */
+    --second-color: #BDBDBD; /* 버튼 마우스 오버 색상 */
+    --third-color: #EBEBEB; /* 버튼 색상 */
+    --body-color: #fff; /* 흰색 */
+
+    /* font */
+    --body-font: 'Hahmlet', serif;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem;
+    --smaller-font-size: 0.6rem;
+    --font-thin: 200;
+    --font-regular: 400;
+    --font-bold: 700;
+}
+
+body {
+    font-family: var(--body-font); /* Hamhlet 체 적용 */
+    font-size: var(--normal-font-size);
+    color: #000;
+}
+header {
+    background-color: var(--first-color);
+    position: fixed;    /* 스크롤 해도 항상 위치 고정 */
+    top: 0;
+    right: 0;   /* 오른쪽 끝까지*/
+    left: 0;    /* 왼쪽 끝까지 늘리기*/
+    z-index: 100; /* 아이템에 마우스 올렸을 때 가려지는 문제 해결 */
+}
+nav {
+    height: 44px;
+}
+
+.nav.container {
+    display: flex;  /* 기본값: 수평정렬 */
+    justify-content: space-between;
+    align-items: center;    /* 교차축 가운데 및 정렬 */
+    padding: 0 16px;    /* 위아래:0, 왼오른: 16px */
+    color: #fff;
+}
+
+.nav.container a {
+    color: #fff;
+}
+
+.nav-logo {
+    font-size: var(--h2-font-size);
+    width: 120px;
+    padding-top: 5px; /*로고 중앙 배치를 위해서*/
+}
+
+
+.nav-toggle {
+    font-size: var(--h2-font-size);
+    visibility: hidden;
+    right: 16px;
+    cursor: pointer;
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 540px) {
+    nav {
+        border-bottom: 1px solid var(--body-color);
+    }
+
+    .nav_toggle {
+        display: block;
+    }
+
+ 
+    
+}
