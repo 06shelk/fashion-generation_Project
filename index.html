@@ -15,7 +15,7 @@
     <header>
         <nav class="nav container">
             <!-- 로고 -->
-            <a href="#" class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <img src="images/logo.png" alt="로고">
             </a>
             <!-- 메뉴 로고(세대 선택) -->
@@ -25,33 +25,57 @@
         </nav>
     </header>
 
+    
     <!-- 메뉴(세대 선택) -->
-    <nav class="menu">
+    <nav id="menu" class="menu">
         <div class="menu-list">
-            <div class="menu-item x-generation">X</div>
-            <div class="menu-item y-generation">Y</div>
-            <div class="menu-item z-generation">Z</div>
-            <div class="menu-item mz-generation">MZ</div>
-            <div class="menu-item future-generation">??</div>
+            <div class="menu-item x-generation">
+                <a href="x.html" class="link">X</a>
+            </div>
+            <div class="menu-item y-generation">
+                <a href="y.html" class="link">Y</a>
+            </div>
+            <div class="menu-item z-generation">
+                <a href="z.html" class="link">Z</a>
+            </div>
+            <div class="menu-item mz-generation">
+                <a href="mz.html" class="link">MZ</a>
+            </div>
+            <div class="menu-item future-generation">
+                <a href="future.html" class="link">???</a>
+            </div>
         </div>
     </nav>
+        
+    <div class="wrap">
+        <!-- COCO CHANEL 부분 -->
+        <section class="COCO">
+            <div class="COCO-img">
+                <img class="COCO-image" src="images/chanel.png" alt="코코샤넬명언">
+            </div>
+            <div class="COCO-text"></div>
+        </section>
 
-    <!-- COCO CHANEL 부분 -->
-    <section class="COCO">
-        <div class="COCO-image">
-            <img class="COCO-image" src="images/chanel.png" alt="코코샤넬명언">
-        </div>
-        <div class="COCO-text"></div>
-    </section>
+        <section class="about">
+            <div class="about-image">
+                <img class ="aboutImg" src="images/about.png" alt="당신의 10대는 어떠셨나요?">
+            </div>
+            <div class="about-text">
+                <p>당신의 10대 패션은 어떠셨나요?</p>
+            </div>
+        </section>
+    </div>
 
-    <section class="about">
-        <div class="about-image">
-            <img  src="images/about.png" alt="당신의 10대는 어떠셨나요?">
-        </div>
-        <div class="about-text">
-            <p>당신의 10대 패션은 어떠셨나요?</p>
-        </div>
-    </section>
+    <!-- 사이드 -->
+    <div class="side">
+        <ul>
+            <li><a href="x.html" class="x-ge">X</a></li>
+            <li><a href="y.html" class="y-ge">Y</a></li>
+            <li><a href="z.html" class="z-ge">Z</a></li>
+            <li><a href="mz.html" class="mz-ge">MZ</a></li>
+            <li><a href="future.html" class="future-ge">??</a></li>
+        </ul>
+    </div>
 
     <script src="js/nav.js"></script>
     <script src="js/index.js"></script>

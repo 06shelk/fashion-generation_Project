@@ -1,13 +1,26 @@
 const navToggleI = document.querySelector("i");
-const navListUl = document.querySelector(".menu-list");
+const navListUl = document.querySelector(".side");
+const side = document.querySelector('.side');
+const COCO = document.querySelector('.COCO');
+const sec1 = document.querySelector('.section1');
 
-// .nav_toggle 클릭하면
 document.querySelector(".nav_toggle").onclick = () => {
-    // .nav_toggle i 햄버거 메뉴 <-> X
-    // class에서 bi-list <-> bi-x-lg
-    navToggleI.classList.toggle("bi-list");
     navToggleI.classList.toggle("bi-x-lg");
+    navToggleI.classList.toggle("bi-list");
 
-    // .menu-list에 .show-menu 클래스를 토글
     navListUl.classList.toggle("show-menu");
+
+    if (navListUl.classList.contains("show-menu")) {
+        side.style.display = 'block';
+        sec1.style.zIndex = '2';
+        COCO.style.zIndex = '2';
+        COCO.style.position = 'relative';
+        
+        
+    } else {
+        side.style.display = 'none';
+        sec1.style.zIndex = '';
+        COCO.style.zIndex = '';
+        COCO.style.position = 'relative';
+    }
 };

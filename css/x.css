@@ -1,0 +1,43 @@
+/* 메뉴 부분 */
+#me,.me {
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+    height: 100px;
+}
+
+.me-list {
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+    width: calc(100% - 100px * 2);
+    max-width: 600px;
+    justify-content: space-between;
+}
+
+.me-item {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--third-color);
+    border-radius: 5px;
+}
+
+
+.ex {
+    background-color: var(--second-color);
+}
+
+.ex1 {
+    z-index: 1;
+    width: 100%;
+    height: calc(100vh - 44px - 100px);
+    background-color: var(--first-color);
+}
+
+.ex2 {
+    width: 100%;
+    height: calc(100vh - 44px);
+}
