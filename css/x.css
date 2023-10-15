@@ -33,6 +33,7 @@
 .ex1 {
     z-index: 1;
     width: 100%;
+    color: var(--body-color);
     height: calc(100vh - 44px - 100px);
     background-color: var(--first-color);
 }
@@ -41,3 +42,37 @@
     width: 100%;
     height: calc(100vh - 44px);
 }
+
+.x-items {
+    display: none;
+    background-color: var(--first-color);
+    height: 100%;
+    padding: 20px;
+    color: var(--body-color);
+}
+
+.x-title {
+    font-size: var(--h1-font-size);
+    width: calc(100% - 100px * 2);
+    max-width: 700px;
+}
+
+.clothes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: calc(100% - 100px * 2);
+    max-width: 700px;
+
+}
+
+.items {
+    border: 1px solid red;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    
+    background-color: aliceblue;
+}
+
