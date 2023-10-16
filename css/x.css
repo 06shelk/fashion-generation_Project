@@ -1,4 +1,4 @@
-/* 메뉴 부분 */
+/* 메뉴(설명, 아이템, 이야기) 전체 부분 */
 #me,.me {
     display: flex;
     align-items: center;
@@ -6,6 +6,7 @@
     height: 100px;
 }
 
+/* 메뉴(설명, 아이템, 이야기) 버튼들을 감싸는 요소 */
 .me-list {
     display: flex;
     gap: 40px;
@@ -15,6 +16,7 @@
     justify-content: space-between;
 }
 
+/* 메뉴(설명, 아이템, 이야기) 버튼들 */
 .me-item {
     width: 100px;
     height: 50px;
@@ -23,14 +25,16 @@
     align-items: center;
     background-color: var(--third-color);
     border-radius: 5px;
+    cursor: pointer;
 }
 
-
+/* 메뉴 버튼, 설명 */
 .ex {
     background-color: var(--second-color);
 }
 
-.ex1 {
+/* x세대 설명 검은 영역 */
+.x-ex1 {
     z-index: 1;
     width: 100%;
     color: var(--body-color);
@@ -38,11 +42,13 @@
     background-color: var(--first-color);
 }
 
-.ex2 {
+/* x세대 설명 흰 영역 */
+.x-ex2 {
     width: 100%;
     height: calc(100vh - 44px);
 }
 
+/* x세대 아이템부분 */
 .x-items {
     display: none;
     background-color: var(--first-color);
@@ -51,12 +57,14 @@
     color: var(--body-color);
 }
 
+/* x세대 아이템부분 제목(x세대) */
 .x-title {
     font-size: var(--h1-font-size);
     width: calc(100% - 100px * 2);
     max-width: 700px;
 }
 
+/* x세대 아이템들 영역 잡기 */
 .clothes {
     display: flex;
     justify-content: center;
@@ -67,12 +75,12 @@
 
 }
 
+/* x세대 아이템 */
 .items {
-    border: 1px solid red;
     margin: 10px;
     width: 200px;
     height: 200px;
-    
-    background-color: aliceblue;
+    border-radius: 5px;
+    background-color: var(--body-color);
 }
 

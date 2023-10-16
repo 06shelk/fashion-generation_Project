@@ -1,4 +1,4 @@
-/* 사진  변환 */ 
+/* 사진 변환(천천히), 글씨 변환 */ 
 const aboutImage = document.querySelector('.about img');
 
 function handleImageChange(imagePath) {

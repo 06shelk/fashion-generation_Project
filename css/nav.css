@@ -24,6 +24,7 @@ body {
     font-size: var(--normal-font-size);
     color: #000;
 }
+
 header {
     background-color: var(--first-color);
     position: fixed;    /* 스크롤 해도 항상 위치 고정 */
@@ -32,6 +33,7 @@ header {
     left: 0;    /* 왼쪽 끝까지 늘리기*/
     z-index: 100; /* 아이템에 마우스 올렸을 때 가려지는 문제 해결 */
 }
+
 nav {
     height: 44px;
 }
@@ -54,7 +56,7 @@ nav {
     padding-top: 5px; /*로고 중앙 배치를 위해서*/
 }
 
-
+/* menu 전체 부분 */
 #menu,.menu {
     display: flex;
     align-items: center;
@@ -62,6 +64,7 @@ nav {
     height: 100px;
 }
 
+/* menu 버튼들을 감싸는 부분 */
 .menu-list {
     display: flex;
     gap: 40px;
@@ -71,6 +74,7 @@ nav {
     justify-content: space-between;
 }
 
+/* menu 버튼들 */
 .menu-item {
     width: 100px;
     height: 50px;
@@ -81,11 +85,18 @@ nav {
     border-radius: 5px;
 }
 
+/* menu 버튼들 마우스 오버 효과 */
+.menu-item:hover {
+    cursor: pointer;
+    background-color: var(--second-color);
+}
 
+/* menu 오른쪽 아이콘 안보이게 */
 .nav .nav_toggle {
     display: none;
 }
 
+/* 540일 때 나오는 메뉴 화면 */
 .side {
     display: none;
     position: fixed;
@@ -96,6 +107,7 @@ nav {
     padding: 10px;
 }
 
+/* 540일 때 나오는 메뉴 화면 마우스 오버 효과 */
 .side ul li:hover {
     background-color: var(--third-color);
 }
@@ -107,14 +119,17 @@ nav {
         border-bottom: 1px solid var(--body-color);
     }
     
+    /* menu 부분(x, y, z... 가로) 사라짐  */
     #menu {
         display: none !important;
     }
 
+    /* menu 부분(x, y, z... 세로) 생김  */
     .side {
         display: none; /* .menu를 숨기고 .side를 보여주도록 설정 */
     }
 
+    /* menu 오른쪽 아이콘 보이게 */
     .nav #nav_toggle {
         display: block;
     }
