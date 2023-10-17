@@ -4,6 +4,7 @@
     align-items: center;
     margin-top: 44px;
     height: 100px;
+    background-color: var(--first-color);
 }
 
 /* 메뉴(설명, 아이템, 이야기) 버튼들을 감싸는 요소 */
@@ -12,8 +13,9 @@
     gap: 40px;
     margin: 0 auto;
     width: calc(100% - 100px * 2);
-    max-width: 600px;
+    max-width: 700px;
     justify-content: space-between;
+    
 }
 
 /* 메뉴(설명, 아이템, 이야기) 버튼들 */
@@ -42,11 +44,107 @@
     background-color: var(--first-color);
 }
 
+/* x세대 검은 영역 이미지 묶음 */
+.x-ex-list {
+    display: flex;
+    margin: 0 auto;
+    width: calc(100% - 100px * 2);
+    gap: 10px;
+    height: 460px;
+    max-width: 700px;
+}
+
+/* x세대 검은 영역 이미지 */
+.x-img {
+    width: 33.3%;
+    height: 400px;
+    background-color: aliceblue;
+}
+
+/* x세대 검은 영역 이미지1 위치 조정 */
+.x-img1 {
+    height: 450px;
+}
+
+/* x세대 검은 영역 이미지2 위치 조정 */
+.x-img2 {
+    margin-top: 25px;
+}
+
+/* x세대 검은 영역 글씨('x세대') 위치 조정 */
+.x-img1-text {
+    font-size: var(--h1-font-size);
+    height: 50px;
+    background-color: var(--first-color);
+}
+
+/* x세대 검은 영역 이미지 설명 */
+.x-ex-short-text {
+    width: 350px;
+    position: relative; 
+    left: 45%;
+    
+}
+
 /* x세대 설명 흰 영역 */
 .x-ex2 {
     width: 100%;
     height: calc(100vh - 44px);
+    padding-top: 100px;
 }
+
+/* x세대 흰 영역 글씨와 선 */
+.x-item-list {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 44px);
+}
+
+/* x세대 흰 영역 선 위치  */
+.x-ex2-hr1,.x-ex2-hr2 {
+    width: 45%;
+    height: 50px; 
+    border: 1px solid red;
+}
+
+/* x세대 흰 영역 글씨와 이미지 부분 */
+.x-ex2-textAndimg {
+    display: flex;
+    width: calc(100% - 100px * 2);
+    height: 550px;
+    max-width: 700px;
+    min-width: 500px;
+    margin: 0 auto;
+}
+
+/* x세대 흰 영역 글씨 부분 */
+.x-ex2-text {
+    width: 60%;
+}
+
+/* x세대 흰 영역 제목 부분(title) */
+.x-ex2-title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 30px;
+}
+
+/* x세대 흰 영역 제목 부분(title) */
+.hr1, .hr2 {
+    width: 100%;
+    height: 4px;
+    background-color: var(--first-color);
+}
+
+/* x세대 흰 영역 선 위치 */
+.hr1 {
+    margin-top: 35px;
+}
+
+.hr2 {
+    margin-top: 500px;
+}
+
+
 
 /* x세대 아이템부분 */
 .x-items {
@@ -84,3 +182,41 @@
     background-color: var(--body-color);
 }
 
+
+@media screen and (max-width: 720px) {
+    
+    /* 설명 검은부분 짧은 설명 */ 
+    .x-ex-short-text {
+        width: 210px;
+        font-size: var(--small-font-size);
+    }
+
+    /* 설명 흰색부분 너비 */ 
+    .x-ex2-textAndimg {
+        min-width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 540px) { 
+    /* 설명 검은부분 짧은 설명 */ 
+    .x-ex-short-text {
+        font-size: var(--small-font-size);
+        width: 180px;
+    }
+
+    /* x세대 설명 이미지 하나 안보임 */ 
+    .x-img2 {
+        display: none;
+    }
+
+    /* x세대 설명 이미지 너비 늘림 */   
+    .x-img {
+        width: 50%;
+    }
+
+    /* x세대 흰색부분 이미지 최소 너비 정함 */ 
+    .x-ex2-textAndimg {
+        min-width: 300px;
+    }
+}
