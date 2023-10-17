@@ -217,5 +217,23 @@
     /* x세대 흰색부분 이미지 최소 너비 정함 */ 
     .x-ex2-textAndimg {
         min-width: 300px;
+        flex-direction: column-reverse;
+        margin-top: 100px;
     }
+
+    .x-ex2-text {
+        width: 100%;
+    
+    }
+
+    .x-ex2-img {
+        width: 200px;
+        height: 370px;
+        width: 100%;
+    }
+
+    .hr2 {
+        margin-top: 650px;
+    }
+
 }
