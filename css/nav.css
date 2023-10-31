@@ -70,7 +70,7 @@ nav {
     gap: 40px;
     margin: 0 auto;
     width: calc(100% - 100px * 2);
-    max-width: 600px;
+    max-width: 700px;
     justify-content: space-between;
 }
 
@@ -93,7 +93,7 @@ nav {
 
 /* menu 오른쪽 아이콘 안보이게 */
 .nav .nav_toggle {
-    display: none;
+    display: block;
 }
 
 /* 540일 때 나오는 메뉴 화면 */
@@ -115,7 +115,7 @@ nav {
 
 /* mobile */
 @media screen and (max-width: 540px) {
-    nav {
+    .nav {
         border-bottom: 1px solid var(--body-color);
     }
     
