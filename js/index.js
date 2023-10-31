@@ -20,39 +20,39 @@ function handleImageChange(imagePath) {
 }
 
 document.querySelector('.x-generation').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutX.png');
+    handleImageChange('images/aboutX.png');
 });
 
 document.querySelector('.y-generation').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutY.jpg');
+    handleImageChange('images/aboutY.jpg');
 });
 
 document.querySelector('.z-generation').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutZ.jpg');
+    handleImageChange('images/aboutZ.jpg');
 });
 
 document.querySelector('.mz-generation').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutMZ.jpg');
+    handleImageChange('images/aboutMZ.jpg');
 });
 
 document.querySelector('.future-generation').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutFUTURE.jpg');
+    handleImageChange('images/aboutFUTURE.jpg');
 });
 
 document.querySelector('.x-ge').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutX.png');
+    handleImageChange('images/aboutX.png');
 });
 document.querySelector('.y-ge').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutY.jpg');
+    handleImageChange('images/aboutY.jpg');
 });
 document.querySelector('.z-ge').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutZ.jpg');
+    handleImageChange('images/aboutZ.jpg');
 });
 document.querySelector('.mz-ge').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutMZ.jpg');
+    handleImageChange('images/aboutMZ.jpg');
 });
 document.querySelector('.future-ge').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutFUTURE.jpg');
+    handleImageChange('images/aboutFUTURE.jpg');
 });
 
 
