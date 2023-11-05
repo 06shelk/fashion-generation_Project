@@ -15,8 +15,8 @@ document.querySelector(".nav_toggle").onclick = () => {
         sec1.style.zIndex = '2';
         COCO.style.zIndex = '2';
         COCO.style.position = 'relative';
-
-
+        
+        
     } else {
         side.style.display = 'none';
         sec1.style.zIndex = '';
@@ -24,10 +24,3 @@ document.querySelector(".nav_toggle").onclick = () => {
         COCO.style.position = 'relative';
     }
 };
-
-// URL에서 "type" 파라미터 값을 가져옵니다.
-const urlParams = new URLSearchParams(window.location.search);
-const type = urlParams.get('type');
-
-// "type" 값을 출력하거나 다른 작업을 수행할 수 있습니다.
-console.log("type 파라미터의 값:", type);

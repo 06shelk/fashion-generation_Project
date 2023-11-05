@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/story.css">
+    <link rel="stylesheet" href="css/x.css">    
 </head>
 
 <body>
@@ -25,38 +26,38 @@
                 <i class="bi bi-grid-fill"></i>
             </div>
         </nav>
-    </header>
-
-
-    <!-- 메뉴(세대 선택) -->
-    <nav id="menu" class="menu">
-        <div class="menu-list">
-            <a href="x.html?type=x" class="x-generation link menu-item ">X세대</a>
-            <a href="x.html?type=y" class="y-generation link menu-item ">Y세대</a>
-            <a href="x.html?type=z" class="z-generation link menu-item ">Z세대</a>
-            <a href="x.html?type=mz" class="mz-generation link menu-item ">MZ세대</a>
-            <a href="x.html?type=future" class="future-generation link menu-item ">???</a>
+    </header><!-- 메뉴(설명, 아이템, 이야기) -->
+    <nav id="me" class="me">
+        <div class="me-list">
+            <div class="me-item ex">
+                설명
+            </div>
+            <div class="me-item item">
+                아이템
+            </div>
+            <div class="me-item stroy">
+                이야기
+            </div>      
         </div>
-    </nav>
+    </nav>  
 
-
-    <!-- COCO CHANEL 부분 -->
-    <section class="COCO">
-        <div class="COCO-img">
-            <img class="COCO-image" src="images/chanel.png" alt="코코샤넬명언">
+    <div class="story-ground" >
+        <div class="story-container">
+            <div class="story-character"><img src="images\x세대\image 12친구.png" alt="대체_텍스트"></div>
+            <div class="story-bar">
+                <div class="story-seen">
+                    <div class="story-name text">이름</div>
+                    <div class="story-talk text">내가 하고 싶은 말은.....이거야...내가 하고 싶은 말은.....이거야...내가 하고 싶은 말은.....이거야..</div>
+                </div>
+                <div class="story-triangle"></div>
+            </div>
+            <div class="story-behide3 hidden">
+                <div class="choise choise-1 hidden">선택1</div>
+                <div class="choise choise-2 hidden">선택2</div>
+                <div class="choise choise-3 hidden">선택3</div>
+            </div>
         </div>
-        <div class="COCO-text"></div>
-    </section>
-
-    <!-- "당신의. 어떠셨나요? 부분" -->
-    <section class="about">
-        <div class="about-image">
-            <img class="aboutImg" src="images/about.png" alt="당신의 10대는 어떠셨나요?">
-        </div>
-        <div class="about-text">
-            <p>당신의 10대 패션은 어떠셨나요?</p>
-        </div>
-    </section>
+    </div>
 
 
     <!-- 사이드 -->
@@ -71,7 +72,7 @@
     </div>
 
     <script src="js/nav.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/story.js"></script>
 </body>
 
 </html>
