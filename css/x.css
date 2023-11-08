@@ -85,7 +85,7 @@
 .x-ex-short-text {
     width: 350px;
     position: relative;
-    left: 45%;
+    left: 50%;
 
 }
 
@@ -186,6 +186,128 @@
 }
 
 
+.story-ground {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: #000;
+}
+
+.story-container {
+    flex-direction: column;
+    border: #fff solid 2px;
+    background-image: url("../images/x세대/image%2013back-story.png");
+    padding: 80px;
+    max-width: 1000px;
+}
+
+.story-character {
+    width: 200px;
+    height: 300px;
+    left: 0;
+    margin-left: 30px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.story-character>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.story-bar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    max-width: 700px;
+    height: 20vh;
+    background-color: rgba(255, 255, 255, 0.54);
+    border-radius: 30px;
+}
+
+.text {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.story-seen {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.story-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.story-talk {
+    max-width: 80%;
+    font-size: 18px;
+}
+
+.story-triangle {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #fff;
+    transform: rotate(90deg);
+}
+
+.story-triangle:hover {
+    cursor: pointer;
+}
+
+.story-behide3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.146);
+}
+
+.choise {
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+    background-color: black;
+    border: #fff solid 0.5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.choise:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.x-img>img{
+    width: 100%;
+    height: 100%;
+}
+
+.x-img1>img{
+    width: 100%;
+    height: calc(100% - var(--h1-font-size)* 1.5);
+}
 @media screen and (max-width: 720px) {
 
     /* 설명 검은부분 짧은 설명 */
@@ -200,10 +322,43 @@
     }
 
     .me-item {
-
         font-size: 20px;
     }
 
+    .x-ex2-textAndimg {
+        flex-direction: column-reverse;
+    }
+
+    .hr1,
+    .hr2 {
+        width: 100%;
+    }
+
+    .story-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        margin-bottom: 8px;
+    }
+
+    .story-name {
+        font-size: 17px;
+    }
+
+    .story-talk {
+        font-size: 15px;
+    }
+
+    .story-seen {
+        padding: 30px;
+    }
+
+    .choise {
+        width: 50%
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -247,8 +402,37 @@
     }
 
     .me-item {
-
         font-size: 12px;
     }
 
+
+    .text {
+        margin-bottom: 5px;
+    }
+
+    .story-name {
+        font-size: 15px;
+    }
+
+    .story-talk {
+        font-size: 14px;
+    }
+
+    .story-seen {
+        padding: 30px;
+    }
+
+    .choise {
+        width: 60%
+    }
+}
+
+.picDiv{
+    width: 20px;
+    height: 20px;
+}
+
+.picDiv>img {
+    width: 100%;
+    height: 100%;
 }

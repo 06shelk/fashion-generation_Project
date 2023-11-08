@@ -25,6 +25,8 @@ document.querySelector(".nav_toggle").onclick = () => {
     }
 };
 
+
+
 // URL에서 "type" 파라미터 값을 가져옵니다.
 const urlParams = new URLSearchParams(window.location.search);
 const type = urlParams.get('type');
