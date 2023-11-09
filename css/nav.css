@@ -2,14 +2,14 @@
 
 /* Variables CSS */
 :root {
-    --first-color: #000000;
     /* 검은색 */
-    --second-color: #BDBDBD;
+    --first-color: #000000;
     /* 버튼 마우스 오버 색상 */
-    --third-color: #EBEBEB;
+    --second-color: #BDBDBD;
     /* 버튼 색상 */
-    --body-color: #fff;
+    --third-color: #EBEBEB;
     /* 흰색 */
+    --body-color: #fff;
 
     /* font */
     --body-font: 'Hahmlet', serif;

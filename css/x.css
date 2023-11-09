@@ -1,3 +1,7 @@
+html{
+    background-color: #000;
+}
+
 /* 메뉴(설명, 아이템, 이야기) 전체 부분 */
 #me,
 .me {
@@ -94,6 +98,7 @@
     width: 100%;
     height: calc(100vh - 44px);
     padding-top: 100px;
+    background-color: #fff;
 }
 
 /* x세대 흰 영역 글씨와 선 */
@@ -204,7 +209,7 @@
 }
 
 .story-character {
-    width: 200px;
+    width: 300px;
     height: 300px;
     left: 0;
     margin-left: 30px;
@@ -236,6 +241,7 @@
 .story-seen {
     display: flex;
     flex-direction: column;
+    width: 80%;
     padding: 30px;
 }
 
@@ -245,7 +251,7 @@
 }
 
 .story-talk {
-    max-width: 80%;
+    max-width: 100%;
     font-size: 18px;
 }
 
