@@ -75,6 +75,34 @@ if (currentURL.indexOf('=') !== -1) {
 }
 console.log(value);
 
+var clothes_Array = [[["./images/x세대/땡땡이 원피스.jpg", "./images/x세대/땡땡이 원피스.jpg", "./images/x세대/땡땡이 원피스.jpg","./images/x세대/땡땡이 원피스.jpg"],
+["땡땡이 원피스", "땡땡이 원피스", "땡땡이 원피스", "땡땡이 원피스"]],
+[[], []],
+[[], []]];
+
+window.onload = function () {
+    var clothesDiv = document.getElementsByClassName("clothes");
+
+    for (var i = 0; i < clothes_Array[0][0].length; i++) {
+        var items = document.createElement("div");
+        var item_imgDiv = document.createElement("div");
+        var item_img = document.createElement("img");
+        var text = document.createElement("p");
+
+        item_imgDiv.className = "item_imgDiv";
+        item_img.className = "item_img";
+        items.className = "items";
+        text.className = "item_text";
+
+        item_img.src = clothes_Array[story_count][0][i];
+        text.textContent = clothes_Array[story_count][1][i];
+        
+        items.appendChild(item_img);
+        items.appendChild(text);
+        clothesDiv[0].appendChild(items);
+    }
+}
+
 const imageElement = document.getElementById('img-white');
 const image1Element = document.getElementById('img-1');
 const image2Element = document.getElementById('img-2');

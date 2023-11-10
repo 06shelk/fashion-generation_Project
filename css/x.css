@@ -1,4 +1,4 @@
-html{
+html {
     background-color: #000;
 }
 
@@ -172,15 +172,14 @@ html{
 
 /* x세대 아이템들 영역 잡기 */
 .clothes {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
     width: calc(100% - 100px * 2);
     max-width: 700px;
-
 }
-
 /* x세대 아이템 */
 .items {
     margin: 10px;
@@ -188,8 +187,21 @@ html{
     height: 200px;
     border-radius: 5px;
     background-color: var(--body-color);
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.item_imgDiv{
+    width: 300px;
+    height: 300px;
+}
+.item_text{
+    margin-top: 5%;
+    color: #000;
+}
 
 .story-ground {
     display: none;
@@ -305,15 +317,16 @@ html{
     display: none;
 }
 
-.x-img>img{
+.x-img>img {
     width: 100%;
     height: 100%;
 }
 
-.x-img1>img{
+.x-img1>img {
     width: 100%;
     height: calc(100% - var(--h1-font-size)* 1.5);
 }
+
 @media screen and (max-width: 720px) {
 
     /* 설명 검은부분 짧은 설명 */
@@ -335,6 +348,10 @@ html{
         flex-direction: column-reverse;
     }
 
+    .clothes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .hr1,
     .hr2 {
         width: 100%;
@@ -411,6 +428,10 @@ html{
         font-size: 12px;
     }
 
+    .clothes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
     .text {
         margin-bottom: 5px;
@@ -433,7 +454,7 @@ html{
     }
 }
 
-.picDiv{
+.picDiv {
     width: 20px;
     height: 20px;
 }
