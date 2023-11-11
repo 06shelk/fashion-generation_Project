@@ -2,14 +2,14 @@
 
 /* Variables CSS */
 :root {
-    /* 검은색 */
     --first-color: #000000;
-    /* 버튼 마우스 오버 색상 */
+    /* 검은색 */
     --second-color: #BDBDBD;
-    /* 버튼 색상 */
+    /* 버튼 마우스 오버 색상 */
     --third-color: #EBEBEB;
-    /* 흰색 */
+    /* 버튼 색상 */
     --body-color: #fff;
+    /* 흰색 */
 
     /* font */
     --body-font: 'Hahmlet', serif;
@@ -181,14 +181,4 @@ nav {
         width: auto;
         height: auto;
     }
-}
-.me-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.me-item>a{
-    width: 100%;
-    height: 100%;
-    text-align: center;
 }

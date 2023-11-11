@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/x.css">
-    
+
 </head>
+
 <body>
     <!-- 헤더 -->
     <header>
@@ -25,7 +27,7 @@
             </div>
         </nav>
     </header>
-    
+
     <!-- 메뉴(설명, 아이템, 이야기) -->
     <nav id="me" class="me">
         <div class="me-list">
@@ -35,11 +37,10 @@
             <div class="me-item item">
                 아이템
             </div>
-            <div class="me-item stroy">
-                이야기
-            </div>      
+            <div class="me-item story">이야기
+            </div>
         </div>
-    </nav>  
+    </nav>
 
     <!-- x세대 설명 부분 -->
     <main class="x-ex">
@@ -48,16 +49,20 @@
             <!-- x세대 이미지 묶음 -->
             <div class="x-ex-list">
                 <div class="x-img x-img1">
-                    <p class="x-img1-text">x세대</p>
-                    
+                    <p class="x-img1-text">
+                    </p>
+                    <img id="img-1" src="" alt="">
                 </div>
-                <div class="x-img x-img2"></div>
-                <div class="x-img x-img3"></div>
+                <div class="x-img x-img2">
+                    <img id="img-2" src="" alt="">
+                </div>
+                <div class="x-img x-img3">
+                    <img id="img-3" src="" alt="">
+                </div>
             </div>
 
             <!-- x세대 간단한 설명 -->
-            <div class="x-ex-short-text">드러나는 옷을 입은 여성이 서울 압구정동 거리를 걷고 있다.
-                과감한 노출, 화려한 옷차림의 여자들로 붐비는 압구정동 거리풍경</div>
+            <div class="x-ex-short-text"></div>
         </main>
 
         <!-- x세대 흰색 부분 -->
@@ -71,11 +76,11 @@
                 <!-- x세대 글씨와 이미지  -->
                 <div class="x-ex2-textAndimg">
                     <div class="x-ex2-text">
-                        <p class="x-ex2-title">X세대</p>
-                        1983년 교육부의 교복자율화 실시로 청소년을 대상으로 한 주니어 복이 인기를 끌면서 기성복 업체에서도 각종 주니어 브랜드를 생산하기 시작했다.청소년층을 대상으로 한 주니어복이 남녀노소를 불문하고 다양한 연령층에게 인기를 얻자 캐주얼 웨어라는 새로운 범주의 패션이 등장했다
+                        <p class="x-ex2-title"></p>
+                        <p class="x-ex2-sub"></p>
                     </div>
                     <div class="x-ex2-img">
-                        <img src="images/XexImg.png" alt="">
+                        <img id="img-white" src="" alt="">
                     </div>
                 </div>
                 <!-- x세대 검은색 선 2  -->
@@ -85,41 +90,52 @@
             </div>
         </main>
     </main>
-    
+
 
     <!-- x세대 아이템 -->
     <main class="x-items">
         <div class="x-title">
-            X세대
         </div>
 
         <!-- 옷 아이템들을 담음 -->
         <div class="clothes">
-            <div class="items item1"></div>
-            <div class="items item2"></div>
-            <div class="items item3"></div>
-            <div class="items item4"></div>
-            <div class="items item5"></div>
-            <div class="items item6"></div>
         </div>
-       
+
+    </main>
+
+    <main class="story-ground">
+        <div class="story-container">
+            <div class="story-character"><img class="char" src="" alt="대체_텍스트"></div>
+            <div class="story-bar">
+                <div class="story-seen">
+                    <div class=" story-name text">dwdwd</p>
+                    </div>
+                    <div class="story-talk text">wdwd</p>
+                    </div>
+                </div>
+                <div class="story-triangle"></div>
+            </div>
+            <div class="story-behide3 hidden">
+                <div class="choise choise-1 hidden">선택1</div>
+                <div class="choise choise-2 hidden">선택2</div>
+                <div class="choise choise-3 hidden">선택3</div>
+            </div>
+        </div>
     </main>
 
     <!-- x세대 이야기 -->
 
-
     <!-- 사이드 -->
     <div class="side">
         <ul>
-            <li><a href="x.html" class="x-ge">X세대</a><br></li>
-            <li><a href="y.html" class="y-ge">Y세대</a><br></li>
-            <li><a href="z.html" class="z-ge">Z세대</a><br></li>
-            <li><a href="mz.html" class="mz-ge">MZ세대</a><br></li>
-            <li><a href="future.html" class="future-ge">???</a><br></li>
+            <li><a href="x.html?type=x" class="x-ge ge">X세대</a><br></li>
+            <li><a href="x.html?type=mz" class="mz-ge ge">MZ세대</a><br></li>
+            <li><a href="x.html?type=future" class="future-ge ge">???</a><br></li>
         </ul>
     </div>
 
     <script src="js/nav.js"></script>
     <script src="js/x.js"></script>
 </body>
+
 </html>

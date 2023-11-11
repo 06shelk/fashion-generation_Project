@@ -3,7 +3,7 @@ const aboutImage = document.querySelector('.about img');
 
 function handleImageChange(imagePath) {
     // 이미지를 서서히 투명하게 만들어 사라지는 효과를 줍니다.
-    aboutImage.style.transition = "opacity 0.5s ease";
+    aboutImage.style.transition = "opacity 3s";
     aboutImage.style.opacity = '0';
 
     // 이미지가 투명해진 후에 새 이미지로 바뀝니다.
@@ -12,7 +12,7 @@ function handleImageChange(imagePath) {
 
         // 이미지가 투명해진 후에 서서히 나타나게 만드는 효과를 줍니다.
         setTimeout(() => {
-            aboutImage.style.transition = "opacity 0.5s ease";
+            aboutImage.style.transition = "opacity 0.5s";
             aboutImage.style.opacity = '1';
 
         }, 100); // 이미지가 바뀌고 0.1초(100밀리초) 후에 투명도가 서서히 세지는 효과가 시작됩니다.
@@ -20,39 +20,39 @@ function handleImageChange(imagePath) {
 }
 
 document.querySelector('.x-generation').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutX.png');
+    handleImageChange('images/aboutX.png');
 });
 
 document.querySelector('.y-generation').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutY.jpg');
+    handleImageChange('images/aboutY.jpg');
 });
 
 document.querySelector('.z-generation').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutZ.jpg');
+    handleImageChange('images/aboutZ.jpg');
 });
 
 document.querySelector('.mz-generation').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutMZ.jpg');
+    handleImageChange('images/aboutMZ.jpg');
 });
 
 document.querySelector('.future-generation').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutFUTURE.jpg');
+    handleImageChange('images/aboutFUTURE.jpg');
 });
 
 document.querySelector('.x-ge').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutX.png');
+    handleImageChange('images/aboutX.png');
 });
 document.querySelector('.y-ge').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutY.jpg');
+    handleImageChange('images/aboutY.jpg');
 });
 document.querySelector('.z-ge').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutZ.jpg');
+    handleImageChange('images/aboutZ.jpg');
 });
 document.querySelector('.mz-ge').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutMZ.jpg');
+    handleImageChange('images/aboutMZ.jpg');
 });
 document.querySelector('.future-ge').addEventListener('mouseover', () => {
-    handleImageChange('../images/aboutFUTURE.jpg');
+    handleImageChange('images/aboutFUTURE.jpg');
 });
 
 

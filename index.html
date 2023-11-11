@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <!-- 헤더 -->
     <header>
@@ -25,29 +27,19 @@
         </nav>
     </header>
 
-    
+
     <!-- 메뉴(세대 선택) -->
     <nav id="menu" class="menu">
         <div class="menu-list">
-            <div class="menu-item x-generation">
-                <a href="x.html" class="link">X</a>
-            </div>
-            <div class="menu-item y-generation">
-                <a href="y.html" class="link">Y</a>
-            </div>
-            <div class="menu-item z-generation">
-                <a href="z.html" class="link">Z</a>
-            </div>
-            <div class="menu-item mz-generation">
-                <a href="mz.html" class="link">MZ</a>
-            </div>
-            <div class="menu-item future-generation">
-                <a href="future.html" class="link">???</a>
-            </div>
+            <a href="x.html?type=x" class="x-generation link menu-item ">X세대</a>
+            <a href="x.html?type=y" class="y-generation link menu-item  hidden">Y세대</a>
+            <a href="x.html?type=z" class="z-generation link menu-item hidden">Z세대</a>
+            <a href="x.html?type=mz" class="mz-generation link menu-item ">MZ세대</a>
+            <a href="x.html?type=future" class="future-generation link menu-item ">???</a>
         </div>
     </nav>
-        
-    
+
+
     <!-- COCO CHANEL 부분 -->
     <section class="COCO">
         <div class="COCO-img">
@@ -59,26 +51,27 @@
     <!-- "당신의. 어떠셨나요? 부분" -->
     <section class="about">
         <div class="about-image">
-            <img class ="aboutImg" src="images/about.png" alt="당신의 10대는 어떠셨나요?">
+            <img class="aboutImg" src="images/about.png" alt="당신의 10대는 어떠셨나요?">
         </div>
         <div class="about-text">
             <p>당신의 10대 패션은 어떠셨나요?</p>
         </div>
     </section>
-    
 
-    <!-- 사이드 540일 때 메뉴부분-->
+
+    <!-- 사이드 -->
     <div class="side">
         <ul>
-            <li><a href="x.html" class="x-ge">X세대</a></li>
-            <li><a href="y.html" class="y-ge">Y세대</a></li>
-            <li><a href="z.html" class="z-ge">Z세대</a></li>
-            <li><a href="mz.html" class="mz-ge">MZ세대</a></li>
-            <li><a href="future.html" class="future-ge">???</a></li>
+            <li><a href="x.html?type=x" class="x-ge ge">X세대</a><br></li>
+            <li class="hidden"><a href="x.html?type=y" class="y-ge ge">Y세대</a><br></li>
+            <li class="hidden"><a href="x.html?type=z" class="z-ge ge">Z세대</a><br></li>
+            <li><a href="x.html?type=mz" class="mz-ge ge">MZ세대</a><br></li>
+            <li><a href="x.html?type=future" class="future-ge ge">???</a><br></li>
         </ul>
     </div>
 
     <script src="js/nav.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>
