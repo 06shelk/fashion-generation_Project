@@ -59,13 +59,13 @@
 ## 특징
 
 <img src="images/md 이미지/index1-.PNG" width="600">
--
+- 핸드폰 화면일때 위에있는 세대 버튼이 없어지고 토글을 통해서 화면을 넘어갈수있다
 
 <img src="images/md 이미지/index1-1.PNG" width="600">
-- 
+- 버튼이나 토글에 있는 버튼들을 hover하면 아래에있는 이미지가 변경된다
 
 <img src="images/md 이미지/item.PNG" width="600">
-- 
+- 컴퓨터일때는 3줄 , 탭일때는 2줄, 폰일때는 1줄로 변경된다
 
 <img src="images/md 이미지/story1.PNG" width="600">
-- 
+- 화면이 탭이하로 내려가면 사람의 위치가 가운데 정렬된다

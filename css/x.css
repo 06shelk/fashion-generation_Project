@@ -202,7 +202,7 @@ html {
     position: relative;
 }
 
-.item_img{
+.item_img {
     width: 150px;
     height: 150px;
 }
@@ -392,6 +392,14 @@ html {
 
     .choise {
         width: 50%
+    }
+
+    .x-ex2-textAndimg {
+        margin-top: 300px;
+    }
+
+    .x-ex2-hr2 {
+        margin-top: 30px;
     }
 }
 
