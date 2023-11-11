@@ -336,6 +336,14 @@ html {
     width: 100%;
     height: 100%;
 }
+@media screen and (max-width: 1000px) {
+    .x-ex2-textAndimg{
+        padding-top: 300px;
+    }
+    .x-ex2-hr2{
+        margin-top: 30px;
+    }
+}
 
 @media screen and (max-width: 720px) {
 

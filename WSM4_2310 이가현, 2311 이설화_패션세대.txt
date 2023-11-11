@@ -1,0 +1,3 @@
+깃허브 링크 : https://github.com/06shelk/fashion-generation_Project
+netlify링크 : https://candid-fenglisu-08ff31.netlify.app
+
