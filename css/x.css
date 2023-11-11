@@ -202,7 +202,7 @@ html {
     position: relative;
 }
 
-.item_img{
+.item_img {
     width: 150px;
     height: 150px;
 }
@@ -336,14 +336,6 @@ html {
     width: 100%;
     height: 100%;
 }
-@media screen and (max-width: 1000px) {
-    .x-ex2-textAndimg{
-        padding-top: 300px;
-    }
-    .x-ex2-hr2{
-        margin-top: 30px;
-    }
-}
 
 @media screen and (max-width: 720px) {
 
@@ -400,6 +392,14 @@ html {
 
     .choise {
         width: 50%
+    }
+
+    .x-ex2-textAndimg {
+        margin-top: 300px;
+    }
+
+    .x-ex2-hr2 {
+        margin-top: 30px;
     }
 }
 
