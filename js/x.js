@@ -26,8 +26,8 @@ const part_story = [    //X세대
     ["안녕! 난 2000대의 너의 친구야!", "너가 나의 옷을 시대에 맞추어 선택해줘!", "너가 나의 옷을 시대에 맞추어 선택해줘!", "오 이쁘다", "극혐인데..?"],
     ["니친구", "니친구", "니친구", "니친구", "니친구"]],
     //미래세대
-    [['./images/x세대/x-student.png', './images/x세대/x-student.png', './images/x세대/x-student.png', './images/x세대/x-cot.png', './images/x세대/x-student.png'],
-    ["안녕! 난 1970대의 너의 친구야!", "너가 나의 옷을 시대에 맞추어 선택해줘!", "너가 나의 옷을 시대에 맞추어 선택해줘!", "오 이쁘다", "극혐인데..?"],
+    [['./images/미래세대/미래-student.png', './images/미래세대/미래-student.png', './images/미래세대/미래-student.png', './images/미래세대/미래-student-1.png', './images/미래세대/미래-student.png'],
+    ["안녕! 난 미래 너의 친구야!", "너가 나의 옷을 시대에 맞추어 선택해줘!", "너가 나의 옷을 시대에 맞추어 선택해줘!", "맞아 이젠 옷을 이런식으로 선택하는 거란다.", "이런 옷은 이제 더이상 잘 입지 않아"],
     ["니친구", "니친구", "니친구", "니친구", "니친구"]]
 ];
 
@@ -75,15 +75,18 @@ if (currentURL.indexOf('=') !== -1) {
 }
 console.log(value);
 
-var clothes_Array = [[["./images/x세대/땡땡이 원피스.jpg", "./images/x세대/땡땡이 원피스.jpg", "./images/x세대/땡땡이 원피스.jpg","./images/x세대/땡땡이 원피스.jpg"],
-["땡땡이 원피스", "땡땡이 원피스", "땡땡이 원피스", "땡땡이 원피스"]],
-[[], []],
-[[], []]];
+var clothes_Array = [[["./images/x세대/카고바지.jpg", "./images/x세대/젤리슈즈.jpg", "./images/x세대/청자켓.jpg", "./images/x세대/디키즈.jpg", "./images/x세대/캉캉치마.jpg", "./images/x세대/에스크.jpg", "./images/x세대/에비수.jpg","./images/x세대/티니위니 후드티.jpg","./images/x세대/보드화.jpg"],
+["카고바지", "젤리슈즈", "청자켓", "디키즈","캉캉치마","에스크","에비수","티니위니 후드티","보드화"]],
+[["./images/mZ세대/mz세대-item (1).png", "./images/mZ세대/mz세대-item (2).png", "./images/mZ세대/mz세대-item (3).png", "./images/mZ세대/mz세대-item (4).png", "./images/mZ세대/mz세대-item (5).png", "./images/mZ세대/mz세대-item (6).png", "./images/mZ세대/mz세대-item (7).png", "./images/mZ세대/mz세대-item (8).png", "./images/mZ세대/mz세대-item (9).png"],
+["후드", "조거 팬츠", "바람막이 맨투맨", "박스핏 후드집업","데닝팬츠","카고팬츠",  "볼캡 모자","데님셔츠 루즈핏", "어그슬리퍼"]],
+[["./images/미래세대/미래-ITEM1.jpg", "./images/미래세대/미래-ITEM2.jpg", "./images/미래세대/미래-ITEM3.jpg"],
+["스프레이 형 재질", "웨어러블 컴퓨터", "전자 섬유", "땡땡이 원피스"]]];
 
 window.onload = function () {
     var clothesDiv = document.getElementsByClassName("clothes");
+    var xItems = document.getElementsByClassName("x-items");
 
-    for (var i = 0; i < clothes_Array[0][0].length; i++) {
+    for (var i = 0; i < clothes_Array[story_count][0].length; i++) {
         var items = document.createElement("div");
         var item_imgDiv = document.createElement("div");
         var item_img = document.createElement("img");
@@ -96,7 +99,7 @@ window.onload = function () {
 
         item_img.src = clothes_Array[story_count][0][i];
         text.textContent = clothes_Array[story_count][1][i];
-        
+
         items.appendChild(item_img);
         items.appendChild(text);
         clothesDiv[0].appendChild(items);
@@ -121,13 +124,13 @@ switch (value) {
         show_story();
         break;
     case "mz":
-        setting_Generation('./images/XexImg.png', './images/mZ세대/ZexImg1.png', './images/mZ세대/ZexImg2.png', './images/mZ세대/ZexImg3.png', "MZ세대", "MZ세대의 패션은 다양하고 창의적이며, 자유로운 스타일을 즐기며 자신의 개성을 패션을 이용해서 표현하고 있습니다.", "한국의 MZ세대 (1980년부터 2010년대에 태어난 세대)는 패션을 통해 자신의 정체성을 표현하고, 개인적인 스타일에 큰 중요성을 두며, 아이템을 선택하는 데 주로 개인 취향을 따른다. 또한, 개인화가 중요한데, 브랜드가 AI와 빅데이터를 활용하여 개인화된 쇼핑 경험을 제공하는 것이 핵심이다. AI는 개인의 쇼핑 습관을 학습하여 맞춤형 서비스를 제공하며, 이는 Z세대에게 매우 중요하다. 이러한 동향으로 리폼과 리세일 시장이 Z세대의 독특한 스타일 탐구로 성장하고 있다.");
+        setting_Generation('./images/mZ세대/MZ세대.jpg.png', './images/mZ세대/MZ세대1.jpg', './images/mZ세대/MZ세대2.jpg.png', './images/mZ세대/MZ세대3.png', "MZ세대", "MZ세대의 패션은 다양하고 창의적이며, 자유로운 스타일을 즐기며 자신의 개성을 패션을 이용해서 표현하고 있습니다.", "한국의 MZ세대 (1980년부터 2010년대에 태어난 세대)는 패션을 통해 자신의 정체성을 표현하고, 개인적인 스타일에 큰 중요성을 두며, 아이템을 선택하는 데 주로 개인 취향을 따른다. 또한, 개인화가 중요한데, 브랜드가 AI와 빅데이터를 활용하여 개인화된 쇼핑 경험을 제공하는 것이 핵심이다. AI는 개인의 쇼핑 습관을 학습하여 맞춤형 서비스를 제공하며, 이는 MZ세대에게 매우 중요하다. 이러한 동향으로 리폼과 리셀 시장이 MZ세대의 독특한 스타일 탐구로 성장하고 있다.");
         story_count = 1;
         story_file = 0;
         show_story();
         break;
     case "future":
-        setting_Generation('./images/XexImg.png', './images/XexImg.png', './images/XexImg.png', './images/XexImg.png', "미래세대", "드러나는 옷을 입은 여성이 서울 압구정동 거리를 걷고 있다.과감한 노출, 화려한 옷차림의 여자들로 붐비는 압구정동 거리풍경", "dkssudgktpdydh");
+        setting_Generation('./images/미래세대/미래-IMG.png', './images/미래세대/미래-IMG1.png', './images/미래세대/미래-IMG2.jpg', './images/미래세대/미래-IMG3.png', "미래세대", "산업이 발달되면서 옷의 새로운 재질이 나타나게 되어 옷의 스타일의 변화가 두드러지지 않고 옷의 재질의 변화가 큽니다. ", "산업의 발전은 새로운 옷 재질의 출현을 촉진하며 옷의 스타일 변화보다는 재질 변화에 중점을 두게 됩니다. 이로 인해 다양한 재질을 활용한 의류 디자인이 더 다양해지고 개인화가 강조됩니다. 플라스틱, 인조 섬유 등의 혁신적인 재질은 지속가능한 패션 산업의 중요한 부분이 됩니다. 새로운 재질은 환경 친화적인 패션 트렌드와 조화를 이루며 패션 산업의 미래를 형성하고 있습니다.");
         story_count = 2;
         story_file = 0;
         show_story();
@@ -142,7 +145,7 @@ const story_triangle = document.querySelector('.story-triangle');
 //story_count = 0;story_file = 0;
 document.querySelector('.story-triangle').onclick = () => {
     if (part_story[story_count][0][story_file] != null) {
-        if ((story_count == 0 && (story_file == 3 || story_file == 4)) || (story_count == 1 && (story_file == 3 || story_file == 4))) {
+        if ((story_count == 0 && (story_file == 3 || story_file == 4)) || (story_count == 1 && (story_file == 3 || story_file == 4)) || (story_count == 2 && (story_file == 3 || story_file == 4))) {
             Xex.style.display = 'block';
             XstoryGround.style.display = 'none';
             Xitems.style.display = 'none';
@@ -167,6 +170,18 @@ document.querySelector('.story-triangle').onclick = () => {
             }
         } else if (story_count == 1 && story_file == 2) {
             remove_class2('hidden', "검정색 가디건", "댄디 검정 코트");
+            choise_1.onclick = () => {
+                add_class2('hidden');
+                story_file = 3;
+                show_story();
+            }
+            choise_2.onclick = () => {
+                add_class2('hidden');
+                story_file = 4;
+                show_story();
+            }
+        } else if (story_count == 2 && story_file == 2) {
+            remove_class2('hidden', "이미지와 색상 보내기", "무*사를 켠다");
             choise_1.onclick = () => {
                 add_class2('hidden');
                 story_file = 3;
